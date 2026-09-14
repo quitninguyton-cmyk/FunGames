@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creator HQ Ultimate Gaming Hub">
+    <title>⚡ Creator HQ | Ultimate Hub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="topbar">
+    <div class="logo">
+        ⚡ <span>CREATOR HQ</span>
+    </div>
+
+```
+<nav>
+    <button onclick="showPage('home')">🏠 Home</button>
+    <button onclick="showPage('games')">🎮 Games</button>
+    <button onclick="showPage('tournaments')">🏆 Tournaments</button>
+    <button onclick="showPage('stats')">📊 Stats</button>
+    <button onclick="showPage('ranks')">👑 Ranks</button>
+    <button onclick="showPage('giveaways')">🎁 Giveaways</button>
+    <button onclick="showPage('events')">📅 Events</button>
+    <button onclick="showPage('news')">📢 News</button>
+    <button onclick="showPage('creators')">🎥 Creators</button>
+</nav>
+
+<button class="discord-btn" onclick="joinDiscord()">
+    💬 Discord
+</button>
+```
+
+</header>
+
+<main>
+
+<!-- HOME -->
+
+<section id="home" class="page active">
+
+```
+<div class="hero">
+    <div>
+        <div class="badge">⚡ THE ULTIMATE GAMING HUB</div>
+
+        <h1>WELCOME TO<br>
+            <span>CREATOR HQ</span>
+        </h1>
+
+        <p>
+            Games • Tournaments • Events • Giveaways • Creators
+        </p>
+
+        <div class="hero-buttons">
+            <button class="primary" onclick="showPage('games')">
+                🎮 PLAY GAMES
+            </button>
+
+            <button class="secondary" onclick="joinDiscord()">
+                💬 JOIN DISCORD
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="quick-grid">
+
+    <div class="quick-card">
+        <span>🎮</span>
+        <h2>Mini Games</h2>
+        <p>Play browser games and earn XP.</p>
+    </div>
+
+    <div class="quick-card">
+        <span>🏆</span>
+        <h2>Tournaments</h2>
+        <p>Compete against the community.</p>
+    </div>
+
+    <div class="quick-card">
+        <span>🎁</span>
+        <h2>Giveaways</h2>
+        <p>Check out upcoming prizes.</p>
+    </div>
+
+    <div class="quick-card">
+        <span>👑</span>
+        <h2>Ranks</h2>
+        <p>Earn XP and unlock ranks.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- GAMES -->
+
+<section id="games" class="page">
+
+```
+<h1>🎮 Mini Games</h1>
+<p class="subtitle">Play games and earn Creator HQ XP!</p>
+
+<div class="game-grid">
+
+    <div class="game-card">
+        <div>⚡</div>
+        <h2>Click Rush</h2>
+        <p>Click as fast as possible!</p>
+        <button onclick="startClicker()">PLAY</button>
+    </div>
+
+    <div class="game-card">
+        <div>🎯</div>
+        <h2>Target Hunt</h2>
+        <p>Hit the target before time runs out.</p>
+        <button onclick="startTarget()">PLAY</button>
+    </div>
+
+    <div class="game-card">
+        <div>🔢</div>
+        <h2>Number Guess</h2>
+        <p>Guess the secret number.</p>
+        <button onclick="startGuess()">PLAY</button>
+    </div>
+
+    <div class="game-card">
+        <div>✊</div>
+        <h2>Rock Paper Scissors</h2>
+        <p>Battle the computer.</p>
+        <button onclick="startRPS()">PLAY</button>
+    </div>
+
+</div>
+
+<div id="gameBox" class="game-box">
+    <h2>🎮 Choose a game above!</h2>
+</div>
+```
+
+</section>
+
+<!-- TOURNAMENTS -->
+
+<section id="tournaments" class="page">
+
+```
+<h1>🏆 Tournaments</h1>
+<p class="subtitle">Compete for glory and rewards.</p>
+
+<div class="content-grid">
+
+    <div class="content-card">
+        <span class="big-icon">🔥</span>
+        <h2>Creator HQ Showdown</h2>
+        <p>🎮 Roblox</p>
+        <p>📅 Saturday • 7:00 PM</p>
+        <p>👥 16 Players</p>
+        <strong>🏆 Champion Role</strong>
+        <br><br>
+        <button onclick="joinDiscord()">REGISTER</button>
+    </div>
+
+    <div class="content-card">
+        <span class="big-icon">⚡</span>
+        <h2>Speed Battle</h2>
+        <p>🎮 Roblox</p>
+        <p>📅 Sunday • 6:00 PM</p>
+        <p>👥 32 Players</p>
+        <strong>⭐ 500 XP</strong>
+        <br><br>
+        <button onclick="joinDiscord()">REGISTER</button>
+    </div>
+
+    <div class="content-card">
+        <span class="big-icon">👑</span>
+        <h2>Champions Cup</h2>
+        <p>🎮 Roblox</p>
+        <p>📅 Next Week</p>
+        <p>👥 64 Players</p>
+        <strong>👑 Champion + XP</strong>
+        <br><br>
+        <button onclick="joinDiscord()">REGISTER</button>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- STATS -->
+
+<section id="stats" class="page">
+
+```
+<h1>📊 Your Stats</h1>
+<p class="subtitle">Your progress is saved in your browser.</p>
+
+<div class="stats-grid">
+
+    <div class="stat-card">
+        <span>⭐</span>
+        <h2 id="xp">0</h2>
+        <p>XP</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🎮</span>
+        <h2 id="played">0</h2>
+        <p>Games Played</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🏆</span>
+        <h2 id="wins">0</h2>
+        <p>Wins</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🔥</span>
+        <h2 id="streak">0</h2>
+        <p>Best Streak</p>
+    </div>
+
+</div>
+
+<div class="profile-card">
+    <h2>👤 Your Username</h2>
+
+    <input
+        id="username"
+        type="text"
+        placeholder="Enter username"
+        maxlength="20"
+    >
+
+    <button onclick="saveUsername()">SAVE USERNAME</button>
+
+    <h2 id="usernameDisplay">Guest</h2>
+</div>
+```
+
+</section>
+
+<!-- RANKS -->
+
+<section id="ranks" class="page">
+
+```
+<h1>👑 Ranks</h1>
+<p class="subtitle">Earn XP to unlock higher ranks.</p>
+
+<div class="rank-list">
+
+    <div class="rank">
+        <span>👤</span>
+        <div>
+            <h2>Member</h2>
+            <p>0 XP</p>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span>💬</span>
+        <div>
+            <h2>Active</h2>
+            <p>100 XP</p>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span>🎮</span>
+        <div>
+            <h2>Gamer</h2>
+            <p>300 XP</p>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span>⚡</span>
+        <div>
+            <h2>Elite</h2>
+            <p>750 XP</p>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span>🏆</span>
+        <div>
+            <h2>Champion</h2>
+            <p>1,500 XP</p>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span>👑</span>
+        <div>
+            <h2>Legend</h2>
+            <p>3,000 XP</p>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- GIVEAWAYS -->
+
+<section id="giveaways" class="page">
+
+```
+<h1>🎁 Giveaways</h1>
+<p class="subtitle">Watch this page for upcoming community prizes!</p>
+
+<div class="content-grid">
+
+    <div class="content-card giveaway">
+        <span class="big-icon">🎁</span>
+        <h2>Creator HQ Mystery Prize</h2>
+        <p>🏆 Mystery gaming prize</p>
+        <p>📅 Coming Soon</p>
+        <button onclick="joinDiscord()">JOIN DISCORD</button>
+    </div>
+
+    <div class="content-card giveaway">
+        <span class="big-icon">💎</span>
+        <h2>Community Giveaway</h2>
+        <p>⭐ Special community reward</p>
+        <p>📅 Coming Soon</p>
+        <button onclick="joinDiscord()">JOIN DISCORD</button>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- EVENTS -->
+
+<section id="events" class="page">
+
+```
+<h1>📅 Events</h1>
+<p class="subtitle">Don't miss what's happening in Creator HQ.</p>
+
+<div class="event-list">
+
+    <div class="event">
+        <span>🎮</span>
+        <div>
+            <h2>Roblox Game Night</h2>
+            <p>Saturday • 5:00 PM</p>
+        </div>
+    </div>
+
+    <div class="event">
+        <span>⚔️</span>
+        <div>
+            <h2>Time Battles</h2>
+            <p>Saturday • 7:00 PM</p>
+        </div>
+    </div>
+
+    <div class="event">
+        <span>🎥</span>
+        <div>
+            <h2>Creator Showcase</h2>
+            <p>Sunday • 4:00 PM</p>
+        </div>
+    </div>
+
+    <div class="event">
+        <span>🎁</span>
+        <div>
+            <h2>Community Giveaway</h2>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- NEWS -->
+
+<section id="news" class="page">
+
+```
+<h1>📢 Creator HQ News</h1>
+<p class="subtitle">Latest community updates.</p>
+
+<div class="news-list">
+
+    <article>
+        <span>⚡</span>
+        <div>
+            <h2>Welcome to Creator HQ Ultimate Hub!</h2>
+            <p>The new gaming hub is now live.</p>
+            <small>Today</small>
+        </div>
+    </article>
+
+    <article>
+        <span>🏆</span>
+        <div>
+            <h2>New tournaments are coming!</h2>
+            <p>Get ready to compete with the community.</p>
+            <small>This Week</small>
+        </div>
+    </article>
+
+    <article>
+        <span>🎮</span>
+        <div>
+            <h2>New mini games added!</h2>
+            <p>Play games and earn XP.</p>
+            <small>This Week</small>
+        </div>
+    </article>
+
+</div>
+```
+
+</section>
+
+<!-- CREATORS -->
+
+<section id="creators" class="page">
+
+```
+<h1>🎥 Creator Hub</h1>
+<p class="subtitle">Showcase your content and discover other creators.</p>
+
+<div class="content-grid">
+
+    <div class="content-card creator">
+        <div class="avatar">⚡</div>
+        <h2>Creator HQ</h2>
+        <p>Gaming • Roblox • Events</p>
+        <button onclick="joinDiscord()">JOIN COMMUNITY</button>
+    </div>
+
+    <div class="content-card creator">
+        <div class="avatar">🎮</div>
+        <h2>Roblox Creators</h2>
+        <p>Gaming content and Roblox videos.</p>
+        <button onclick="joinDiscord()">JOIN DISCORD</button>
+    </div>
+
+    <div class="content-card creator">
+        <div class="avatar">🏆</div>
+        <h2>Tournament Creators</h2>
+        <p>Competitive gaming content.</p>
+        <button onclick="joinDiscord()">JOIN DISCORD</button>
+    </div>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<footer>
+    <h2>⚡ CREATOR HQ</h2>
+    <p>Play • Compete • Create</p>
+
+```
+<button class="discord-btn" onclick="joinDiscord()">
+    💬 Join Creator HQ Discord
+</button>
+
+<p class="copyright">
+    © 2026 Creator HQ
+</p>
+```
+
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
