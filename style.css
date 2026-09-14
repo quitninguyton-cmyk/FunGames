@@ -401,3 +401,36 @@ nav button {
 ```
 
 }
+.leaderboard-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.leaderboard-title p {
+    opacity: .6;
+    margin-top: 8px;
+}
+
+.current-player {
+    border: 2px solid #5865f2;
+    background: rgba(88, 101, 242, .15);
+}
+
+.leader-info {
+    flex: 1;
+}
+
+.leader-info h2 {
+    margin: 0;
+}
+
+.leader-info small {
+    font-size: 11px;
+    background: #5865f2;
+    padding: 4px 7px;
+    border-radius: 6px;
+}
+
+.rank > strong {
+    white-space: nowrap;
+}
